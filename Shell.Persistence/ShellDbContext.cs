@@ -7,11 +7,8 @@ using File = Shell.Domain.Entities.File;
 
 namespace Shell.Persistence
 {
-    public class ShellDbContext : DbContext, IShellDbContext
+    public class ShellDbContext(DbContextOptions<ShellDbContext> options) : DbContext(options), IShellDbContext
     {
-        public ShellDbContext(DbContextOptions<ShellDbContext> options)
-            : base(options) { }
-
         public DbSet<File> Files { get; set; }
         public DbSet<Directory> Directories { get; set; }
         public DbSet<Drive> Drives { get; set; }
