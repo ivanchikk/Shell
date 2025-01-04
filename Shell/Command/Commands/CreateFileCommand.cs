@@ -1,6 +1,6 @@
 ﻿namespace Shell.Command.Commands
 {
-    public class CreateFileCommand(string host) : CommandPrototype(host)
+    public class CreateFileCommand(string host) : CommandTemplate(host)
     {
         public override string Description => "Create file";
 

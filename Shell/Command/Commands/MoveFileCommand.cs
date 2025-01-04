@@ -1,6 +1,6 @@
 ﻿namespace Shell.Command.Commands
 {
-    public class MoveFileCommand(string host) : CommandPrototype(host)
+    public class MoveFileCommand(string host) : CommandTemplate(host)
     {
         public override string Description => "Move(update) file";
 

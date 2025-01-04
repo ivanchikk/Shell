@@ -1,6 +1,6 @@
 ﻿namespace Shell.Command.Commands
 {
-    public class CopyFileCommand(string host) : CommandPrototype(host)
+    public class CopyFileCommand(string host) : CommandTemplate(host)
     {
         public override string Description => "Copy file";
 

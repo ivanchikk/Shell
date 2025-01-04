@@ -1,6 +1,6 @@
 ﻿namespace Shell.Command.Commands
 {
-    public class MoveDirectoryCommand(string host) : CommandPrototype(host)
+    public class MoveDirectoryCommand(string host) : CommandTemplate(host)
     {
         public override string Description => "Move(update) directory";
 

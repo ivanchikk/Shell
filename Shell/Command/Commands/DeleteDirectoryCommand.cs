@@ -1,6 +1,6 @@
 ﻿namespace Shell.Command.Commands
 {
-    public class DeleteDirectoryCommand(string host) : CommandPrototype(host)
+    public class DeleteDirectoryCommand(string host) : CommandTemplate(host)
     {
         public override string Description => "Delete directory";
 

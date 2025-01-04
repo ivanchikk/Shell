@@ -3,7 +3,7 @@ using File = Shell.Models.File;
 
 namespace Shell.Command.Commands
 {
-    public class SearchFilesCommand(string host) : CommandPrototype(host)
+    public class SearchFilesCommand(string host) : CommandTemplate(host)
     {
         public override string Description => "Search files by name and creationDate";
         public override async Task<HttpResponseMessage> GetResponse(string[] args)

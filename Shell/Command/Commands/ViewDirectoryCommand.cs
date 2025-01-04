@@ -3,7 +3,7 @@ using System.Text.Json;
 
 namespace Shell.Command.Commands
 {
-    public class ViewDirectoryCommand(string host) : CommandPrototype(host)
+    public class ViewDirectoryCommand(string host) : CommandTemplate(host)
     {
         public override string Description => "View directory";
 

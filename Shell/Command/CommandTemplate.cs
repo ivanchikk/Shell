@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace Shell.Command
 {
-    public abstract class CommandPrototype(string host) : ICommand
+    public abstract class CommandTemplate(string host) : ICommand
     {
         protected readonly string Api = host;
         protected static readonly JsonSerializerOptions Options = new()
